@@ -30,6 +30,13 @@ export const usePokedexStore = defineStore("pokedex", {
         async getPokemonData(name) {
             const response = await HTTP.get(`/${name}`);
             this.pokedexData = [...this.pokedexData, response.data];
+            let data = this.pokedexData;
+
+            data.sort((a, b) => {
+                return a.id - b.id;
+            });
+
+            this.pokedexData = data;
             return response;
         },
         filtar(tipo) {
