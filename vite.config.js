@@ -10,5 +10,5 @@ export default defineConfig({
             "@": fileURLToPath(new URL("./src", import.meta.url)),
         },
     },
-    base: "https://Rodolfo-Castillo.github.io/PokedexVue3",
+    base: "https://rodolfo-castillo.github.io/PokedexVue3/",
 });
