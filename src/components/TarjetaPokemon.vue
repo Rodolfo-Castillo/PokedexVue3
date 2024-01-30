@@ -36,5 +36,5 @@ defineProps({
     </div>
 </template>
 <style scoped>
-@import "../style/TarjetaPokemon.css";
+@import "@/style/TarjetaPokemon.css";
 </style>

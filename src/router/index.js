@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Pokedex from "../pages/Pokedex.vue";
+import Pokedex from "@/pages/Pokedex.vue";
 
 const routes = [{ path: "/PokedexVue3", name: "Pokedex", component: Pokedex }];
 

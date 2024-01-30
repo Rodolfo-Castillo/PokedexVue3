@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import { usePokedexStore } from "../store";
+import { usePokedexStore } from "@/store";
 let search = ref(null);
 const tipos = [
     {
@@ -114,7 +114,7 @@ const filtrarPorPalabra = () => {
     <main>
         <nav class="nav header">
             <div class="logo-search">
-                <img class="logo" src="../assets/logo.png" alt="Logo Pokedex" />
+                <img class="logo" src="@/assets/logo.png" alt="Logo Pokedex" />
                 <!-- <div class="search-container">
                     <input
                         v-model="search"
@@ -145,5 +145,5 @@ const filtrarPorPalabra = () => {
     </main>
 </template>
 <style scoped>
-@import "../style/Navbar.css";
+@import "@/style/Navbar.css";
 </style>

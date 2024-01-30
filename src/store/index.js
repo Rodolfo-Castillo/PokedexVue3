@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { HTTP } from "../axios";
+import { HTTP } from "@/axios";
 
 export const usePokedexStore = defineStore("pokedex", {
     state: () => ({

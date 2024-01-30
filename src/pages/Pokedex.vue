@@ -1,8 +1,8 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import Navbar from "../components/Navbar.vue";
-import TarjetaPokemon from "../components/TarjetaPokemon.vue";
-import { usePokedexStore } from "../store";
+import Navbar from "@/components/Navbar.vue";
+import TarjetaPokemon from "@/components/TarjetaPokemon.vue";
+import { usePokedexStore } from "@/store";
 
 const scrollComponent = ref();
 const store = usePokedexStore();
@@ -73,5 +73,5 @@ onMounted(async () => {
     </main>
 </template>
 <style scoped>
-@import "../style/Pokedex.css";
+@import "@/style/Pokedex.css";
 </style>
